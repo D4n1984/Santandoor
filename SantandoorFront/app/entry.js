@@ -1,47 +1,105 @@
+var jquery = window.$ = require('jquery');
 var Backbone = require('backbone');
 var Marionette = require('backbone.marionette');
 var estimoteLib = require('tools/estimote.js');
-//DB.createDB();
 
 estimoteLib.startMonitoringBeacons();
-var mainLayout = new Backbone.Marionette.LayoutView({
-    el: '#main',
-    regions: {
-        content: "#app-content",
-        header: "#app-header",
-        footer: "#app-footer"
-    },
-    template: require('./templates/layout.html'),
+
+const initialize = function() {
+  	return Promise.resolve();
+};
+
+const app = new Marionette.Application();
+
+app.on('start', () => {
+
+	Backbone.emulateHTTP = true;
+
+	app.mainLayout = new Backbone.Marionette.LayoutView({
+
+	    el: '.wrapper',
+
+	    regions: {
+	        content: "#content-region",
+	        header: "#header-region",
+	        panel: '#panel-region'
+	    },
+
+	    template: require('./templates/layout.html'),
+
+	});
+
+	app.mainLayout.render();
+
+	var Router = require('./router.js');
+
+	Backbone.history.start();
+
+	app.navigate = new Router({
+		controller: API
+	}).navigate;
+
+	//events
+
+	app.on('home', function() {
+		app.navigate('home', {trigger: true});
+	});
+
+	app.on('list', function() {
+		app.navigate('list', {trigger: true});
+	});
+	
+	app.on('details', function(id) {
+		app.navigate('details/' + id, {trigger: true});
+	});
+
+	app.navigate('preload', {trigger: true});
 
 });
 
-mainLayout.render();
+initialize().then(() => app.start());
 
-var buttonLayout = new Backbone.Marionette.ItemView({
-    template: require('./templates/view1.html'),
+var API = {
 
+	preload: function() {
+		var Header = require('./modules/header/controller.js');
+		Header.show();
+		var Panel = require('./modules/panel/controller.js');
+		Panel.show();
+		app.navigate('home', {trigger: true});
+	},
+		
+	home: function() {
+		$('#preload-region').fadeIn(function() {
+			var Controller = require('./modules/home/controller.js');
+			Controller.show();
+			$('#main-region').removeClass('isOpen');
+			$('#preload-region').fadeOut();
+		});
+	},
+
+	list: function() {
+		$('#preload-region').fadeIn(function() {
+			var Controller = require('./modules/list/controller.js');
+			Controller.show();
+			$('#main-region').removeClass('isOpen');
+			$('#preload-region').fadeOut();
+		});
+	},
+
+	details: function(id) {
+		$('#preload-region').fadeIn(function() {
+			var Controller = require('./modules/details/controller.js');
+			Controller.show();
+			$('#main-region').removeClass('isOpen');
+			$('#preload-region').fadeOut();
+		});
+	}
+
+};
+
+$(window).resize(function() {
+	//utils.resize();
 });
 
-
-mainLayout.content.show(buttonLayout);
-//var panel = new PanelView();
-
-//mainLayout.content.show(panel);
-
-
-
-// var TodoList = Marionette.CollectionView.extend({
-//     el: '#app-hook',
-//     tagName: 'ul',
-//
-//     childView: ToDo
-// });
-//
-// var todo = new TodoList({
-//     collection: new Backbone.Collection([
-//         {assignee: 'Scott', text: 'Write a book about Marionette'},
-//         {assignee: 'Andrew', text: 'Do some coding'}
-//     ])
-// });
-//
-// todo.render();
+window.app = app;
