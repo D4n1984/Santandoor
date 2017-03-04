@@ -4,7 +4,7 @@
 
 var userSelector = function (userId) {
 
-    var response = require('./json/'+userId+'.json');
+    var response = require('./json/user_'+userId+'.json');
     return response;
 }
 
