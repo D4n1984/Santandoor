@@ -1,7 +1,9 @@
 var Backbone = require('backbone');
 var Marionette = require('backbone.marionette');
-//var DB = require('models/db.js');
+var estimoteLib = require('tools/estimote.js');
 //DB.createDB();
+
+estimoteLib.startMonitoringBeacons();
 var mainLayout = new Backbone.Marionette.LayoutView({
     el: '#main',
     regions: {

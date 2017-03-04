@@ -1,0 +1,137 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"LocationManager\"><param name=\"android-package\" value=\"com.unarin.cordova.beacon.LocationManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EstimoteBeacons\"><param name=\"android-package\" value=\"com.evothings.EstimoteBeacons\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<receiver android:name=\"org.altbeacon.beacon.startup.StartupBroadcastReceiver\"><intent-filter><action android:name=\"android.intent.action.BOOT_COMPLETED\" /><action android:name=\"android.intent.action.ACTION_POWER_CONNECTED\" /><action android:name=\"android.intent.action.ACTION_POWER_DISCONNECTED\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:enabled=\"true\" android:exported=\"true\" android:isolatedProcess=\"false\" android:label=\"iBeacon\" android:name=\"org.altbeacon.beacon.service.BeaconService\"></service>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:enabled=\"true\" android:name=\"org.altbeacon.beacon.BeaconIntentProcessor\"><meta-data android:name=\"background\" android:value=\"true\" /><intent-filter android:priority=\"1\"><action android:name=\"com.unarin.cordova.beacon.IBeaconPlugin.DID_RANGING\" /><action android:name=\"com.unarin.cordova.beacon.IBeaconPlugin.DID_MONITORING\" /></intent-filter></service>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:exported=\"false\" android:name=\"com.estimote.sdk.service.BeaconService\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.unarin.cordova.beacon": {
+            "PACKAGE_NAME": "com.anotherconsulting.estimote"
+        },
+        "cordova-plugin-estimote": {
+            "PACKAGE_NAME": "com.anotherconsulting.estimote"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "com.unarin.cordova.beacon.underscorejs",
+            "file": "plugins/com.unarin.cordova.beacon/www/lib/underscore-min-1.6.js",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "id": "com.unarin.cordova.beacon.Q",
+            "file": "plugins/com.unarin.cordova.beacon/www/lib/q.min.js",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "id": "com.unarin.cordova.beacon.LocationManager",
+            "file": "plugins/com.unarin.cordova.beacon/www/LocationManager.js",
+            "pluginId": "com.unarin.cordova.beacon",
+            "merges": [
+                "cordova.plugins"
+            ]
+        },
+        {
+            "id": "com.unarin.cordova.beacon.Delegate",
+            "file": "plugins/com.unarin.cordova.beacon/www/Delegate.js",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "id": "com.unarin.cordova.beacon.Region",
+            "file": "plugins/com.unarin.cordova.beacon/www/model/Region.js",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "id": "com.unarin.cordova.beacon.Regions",
+            "file": "plugins/com.unarin.cordova.beacon/www/Regions.js",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "id": "com.unarin.cordova.beacon.CircularRegion",
+            "file": "plugins/com.unarin.cordova.beacon/www/model/CircularRegion.js",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "id": "com.unarin.cordova.beacon.BeaconRegion",
+            "file": "plugins/com.unarin.cordova.beacon/www/model/BeaconRegion.js",
+            "pluginId": "com.unarin.cordova.beacon",
+            "runs": true
+        },
+        {
+            "id": "cordova-plugin-estimote.EstimoteBeacons",
+            "file": "plugins/cordova-plugin-estimote/plugin/src/js/EstimoteBeacons.js",
+            "pluginId": "cordova-plugin-estimote",
+            "clobbers": [
+                "estimote"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "com.unarin.cordova.beacon": "3.4.1",
+        "cordova-plugin-estimote": "0.8.0"
+    }
+}
