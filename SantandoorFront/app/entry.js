@@ -6,22 +6,16 @@ var css = require('./css/main.css');
 
 var BackboneAsync = require("backbone.async");
 
-
 const initialize = function() {
-  var def = new Promise(function(resolve, reject){
-    document.addEventListener('deviceReady', function(){
-        resolve();
-    },false);
-  });
-  return def;
+    return Promise.resolve();
 };
 
 const app = new Marionette.Application();
 app.ModelsPrototype = BackboneAsync.Model;
 
 app.CONSTANTES =  {
-    URL: 'http://172.26.1.64:6002'
-    //URL : 'https://backend-fs-anotherconsulting.mybluemix.net'
+    //URL: 'http://172.26.1.64:6002'
+    URL : 'https://backend-fs-anotherconsulting.mybluemix.net'
 };
 
 app.foreground = true;
@@ -55,6 +49,9 @@ app.mainLayout = new Backbone.Marionette.LayoutView({
 
 estimoteLib.startMonitoringBeaconsEstimote();
 app.mainLayout.render();
+window.onerror = function(e) {
+  alert(e);
+};
 
 var Router = require('./router.js');
 
@@ -126,7 +123,11 @@ app.navigate('preload', {trigger: true});
 
 });
 
-initialize().then(() => app.start());
+initialize().then(function() {
+  document.addEventListener('deviceReady', function(){
+    app.start();
+  });
+});
 
 var API = {
 
