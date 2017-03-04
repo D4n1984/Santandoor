@@ -43,6 +43,8 @@ module.exports =  {
             delegate.didEnterRegion = function (result) {
 
                 // Log to Xcode
+
+
                 app.vent.trigger("estimote:enter:region", result.region.identifier);
                 console.log("estimote:enter:region", result.region);
 

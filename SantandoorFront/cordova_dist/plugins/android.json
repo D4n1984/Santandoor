@@ -12,7 +12,23 @@
         },
         "cordova-plugin-estimote": {
             "PACKAGE_NAME": "com.anotherconsulting.estimote"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "com.anotherconsulting.estimote"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-android-support-v4": {
+            "PACKAGE_NAME": "com.anotherconsulting.estimote"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.anotherconsulting.estimote"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.anotherconsulting.estimote"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.anotherconsulting.estimote"
+        }
+    }
 }
