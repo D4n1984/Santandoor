@@ -1,3 +1,5 @@
+var Backbone = require('backbone');
+var Marionette = require('backbone.marionette');
 
 module.exports =  {
 
@@ -34,16 +36,15 @@ module.exports =  {
             delegate.didStartMonitoringForRegion = function (result) {
 
                 // Log to Xcode
-                console.log(">>> START " + JSON.stringify(result));
+                console.log("start region");
 
             };
 
             delegate.didEnterRegion = function (result) {
 
                 // Log to Xcode
-                console.log(">>> ENTER " + JSON.stringify(result));
-
-                console.log(">>>|| ENTER DEBUG ||<<<", result.region.identifier);
+                app.vent.trigger("estimote:enter:region", result.region.identifier);
+                console.log("estimote:enter:region", result.region);
 
                 // Start Ranging Beacon When it enters Inside Region
                 cordova.plugins.locationManager.startRangingBeaconsInRegion(BeaconRegions[result.region.identifier])
@@ -54,9 +55,8 @@ module.exports =  {
 
             delegate.didExitRegion = function (result) {
 
-                // Log to Xcode
-                // console.log(">>> EXIT " + JSON.stringify(result));
-                console.log(">>>|| EXIT DEBUG ||<<<", result.region.identifier);
+                app.vent.trigger("estimote:exit:region", result.region.identifier);
+                console.log("estimote:exit:region", result.region);
 
                 // Stop Ranging Beacon if Outside Region
                 cordova.plugins.locationManager.stopRangingBeaconsInRegion(BeaconRegions[result.region.identifier])
@@ -76,10 +76,8 @@ module.exports =  {
 
             delegate.didRangeBeaconsInRegion = function (result) {
 
-                // Log to Xcode
-                // console.log(">>> RANGE " + JSON.stringify(result));
-
-                console.log(">>>|| RANGE DEBUG ||<<<", result.region.identifier, result.beacons[0].proximity);
+                app.vent.trigger("estimote:enter:beacon", result);
+                console.log("estimote:enter:beacon", result);
 
             };
 

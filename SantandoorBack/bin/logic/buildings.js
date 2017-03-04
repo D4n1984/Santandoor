@@ -21,6 +21,9 @@ var buildingSelector = function (buildId, host) {
 
     response.images = files;
 
+    console.log('./images/'+buildId);
+    var paths = file('../images/inmueble_'+buildId);
+    console.log(paths);
     return response;
 };
 
