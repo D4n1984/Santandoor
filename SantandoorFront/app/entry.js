@@ -2,6 +2,7 @@ var jquery = window.$ = require('jquery');
 var Backbone = require('backbone');
 var Marionette = require('backbone.marionette');
 var estimoteLib = require('tools/estimote.js');
+var css = require('./css/main.css');
 
 estimoteLib.startMonitoringBeacons();
 
