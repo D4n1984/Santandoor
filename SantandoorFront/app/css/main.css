@@ -1,11 +1,13 @@
 
 
-html, body {backgwround-color:#222;
+html, body {
+  background-color:#f00000;
 margin:0;
 padding:0;
 width:100%;
 height:100%;
-position:relative;background-image:url(https://cdn.tutsplus.com/active/uploads/legacy/tuts/172_silverlightTranslator/tutorial/images/bg.jpg);
+position:relative;
+background-image:url(https://cdn.tutsplus.com/active/uploads/legacy/tuts/172_silverlightTranslator/tutorial/images/bg.jpg);
 }
 
 
@@ -104,23 +106,23 @@ color:#aaa;}
 
 
 @media screen and (max-width:1750px){
-	#content-articles .list li{width:20%;}	
+	#content-articles .list li{width:20%;}
 }
 
 @media screen and (max-width:1400px){
-	#content-articles .list li{width:25%;}	
+	#content-articles .list li{width:25%;}
 }
 
 @media screen and (max-width:1050px){
-	#content-articles .list li{width:33.333%;}	
+	#content-articles .list li{width:33.333%;}
 }
 
 @media screen and (max-width:700px){
-	#content-articles .list li{width:50%;}	
+	#content-articles .list li{width:50%;}
 }
 
 @media screen and (max-width:350px){
-	#content-articles .list li{width:100%;}	
+	#content-articles .list li{width:100%;}
 }
 
 
@@ -145,9 +147,9 @@ color:#aaa;}
 }
 
 
-#flex-container > :nth-child(3n - 2) { oñrder: 1; }
-#flex-container > :nth-child(3n - 1) { oñrder: 2; }
-#rflex-container > :nth-child(3n - 0) { oñrder: 3; }
+#flex-container > :nth-child(3n - 2) { oï¿½rder: 1; }
+#flex-container > :nth-child(3n - 1) { oï¿½rder: 2; }
+#rflex-container > :nth-child(3n - 0) { oï¿½rder: 3; }
 #flex-container > :nth-child(-n + 3) {
   break-before: always; /* Doesn't work yet :( */
 
@@ -192,7 +194,7 @@ font-weight:normal;}
     box-shadow: 3px 3px 2px #E0E0E0;
 	overflow:auto;
 	}
-	
+
 	#zcontent-articles  .list article  .image .border span{display: block;
 	border:4px solid #FFF;}
 
@@ -391,7 +393,7 @@ display:table!important;
 
 #popup-box.hidden{display:none;}
  #popup-box.advertise{width:auto!important;max-width:auto!important;}
- 
+
 #popup-message{padding:20px;
 
 }
@@ -457,7 +459,7 @@ width:100%;height:100%;overflow:hidden;
 
 #content-header{padding:15px;}
 #main-region{}
-#header-region{background-color:rgba(0,0,0,.3);padding:10px;}
+#header-region{background-color:#f00000;padding:10px;}
 #header-region > div {padding:10px;}
 #content-region{height:100%;position:relative;background-color:#fff;}
 #popup-region{display:none;}
@@ -543,6 +545,3 @@ background-size:cover;}
 #content-panel ul li a div span.text{width:auto;height:40px;padding-left:20px;}
 #content-panel ul li a div span.arrow{width:40px;height:40px;
 background-size:cover;    opacity: .5;}
-
-
-
