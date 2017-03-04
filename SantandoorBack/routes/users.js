@@ -1,9 +1,12 @@
 var express = require('express');
+var logic = require('../bin/logic/users.js');
 var router = express.Router();
+
+
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.json(logic("u001"));
 });
 
 module.exports = router;
