@@ -10,7 +10,7 @@ var file = require('./utils/fileutils.js');
 var buildingSelector = function (buildId) {
 
     var response = require('./json/inmueble_'+buildId+'.json');
-console.log('./images/'+buildId);
+    console.log('./images/'+buildId);
     var paths = file('../images/inmueble_'+buildId);
     console.log(paths);
     return response;
