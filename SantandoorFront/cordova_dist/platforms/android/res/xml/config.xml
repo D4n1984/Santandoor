@@ -3,6 +3,9 @@
     <feature name="LocationManager">
         <param name="android-package" value="com.unarin.cordova.beacon.LocationManager" />
     </feature>
+    <feature name="EstimoteBeacons">
+        <param name="android-package" value="com.evothings.EstimoteBeacons" />
+    </feature>
     <name>sample</name>
     <description>
         Skeleton for a front application
@@ -20,7 +23,4 @@
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
-    <feature name="EstimoteBeacons">
-        <param name="android-package" value="com.evothings.EstimoteBeacons" />
-    </feature>
 </widget>
