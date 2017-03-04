@@ -1,0 +1,21 @@
+{
+  "id":"inmueble_2",
+  "status":"Venta",
+  "build":{
+    "status":"Nuevo",
+    "type":"Piso",
+    "price":450000,
+    "detail":{
+      "rooms":3,
+      "baths":2,
+      "size":{
+        "util":88,
+        "build":97
+      },
+      "floor":8,
+      "energy":"B",
+      "images":[
+      ]
+    }
+  }
+}

@@ -11,15 +11,17 @@ var buildingSelector = function (buildId, host) {
 
     var response = require('./json/inmueble_'+buildId+'.json');
     var path = '/images/inmueble_'+buildId;
+    try {
+        var files = fs.readdirSync("./public/" + path);
 
-    var files = fs.readdirSync("./public/" + path);
+        for (var i in files) {
+            console.log('File:  ' + host + "/" + files[i]);
+            files[i] = host + path + "/" + files[i];
+        }
 
-    for (var i in files) {
-        console.log('File:  ' + host + "/" + files[i]);
-        files[i] = host + path + "/" + files[i];
-    }
+        response.images = files;
+    }catch(err){};
 
-    response.images = files;
     return response;
 };
 

@@ -1,10 +1,10 @@
 {
   "id":"inmueble_1",
-  "status":"Alquiler",
+  "status":"Venta",
   "build":{
     "status":"Semi-nuevo",
     "type":"Piso",
-    "price":500,
+    "price":225000,
     "detail":{
       "rooms":1,
       "baths":1,
