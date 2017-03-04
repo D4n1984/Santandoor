@@ -8,8 +8,8 @@ var router = express.Router();
 router.get('/:id', function(req, res, next) {
   console.log("GET /buildings/"+req.params.id)+ " START";
   var uuid = req.params.id;
-  console.log(uuid);
-  res.json(logic(uuid));
+    var host = req.protocol + '://' + req.get('host');
+  res.json(logic(uuid, host));
 });
 
 module.exports = router;

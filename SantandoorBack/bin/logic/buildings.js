@@ -5,14 +5,22 @@
  *  notificar la salida del inmueble.
  */
 
-var file = require('./utils/fileutils.js');
+var fs = require('fs');
 
-var buildingSelector = function (buildId) {
+var buildingSelector = function (buildId, host) {
 
     var response = require('./json/inmueble_'+buildId+'.json');
-console.log('./images/'+buildId);
-    var paths = file('../images/inmueble_'+buildId);
-    console.log(paths);
+    var path = '/images/inmueble_'+buildId;
+
+    var files = fs.readdirSync("./public/" + path);
+
+    for (var i in files) {
+        console.log('File:  ' + host + "/" + files[i]);
+        files[i] = host + path + "/" + files[i];
+    }
+
+    response.images = files;
+
     return response;
 };
 
