@@ -1,17 +1,19 @@
 /**
  * Created by dgarcia2 on 04/03/2017.
- */
-/**
- *  TODO recuperar listado inmuebles en base a un UUID.
  *  recuperar detalle inmuebles en base al id del inmueble devuelto
  *  solicitar acceso al inmueble
  *  notificar la salida del inmueble.
  */
 
+var file = require('./utils/fileutils.js');
+
 var buildingSelector = function (buildId) {
 
-    var response = require('./json/'+buildId+'.json');
+    var response = require('./json/inmueble_'+buildId+'.json');
+console.log('./images/'+buildId);
+    var paths = file('../images/inmueble_'+buildId);
+    console.log(paths);
     return response;
-}
+};
 
 module.exports = buildingSelector;
