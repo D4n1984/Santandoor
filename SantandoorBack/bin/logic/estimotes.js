@@ -5,7 +5,7 @@
 var estimoteSelector = function (uuid, major) {
     var error = {error:{code:400, status : "estimote not recognized"}};
 
-    if(uuid !== "B9407F30-F5F8-466E-AFF9-25556B57FE6D"){
+    if(uuid.toUpperCase() !== "B9407F30-F5F8-466E-AFF9-25556B57FE6D"){
         res.json(error);
         return;
     }
