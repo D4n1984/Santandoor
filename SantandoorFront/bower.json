@@ -1,0 +1,23 @@
+{
+  "name": "marionette-skeleton",
+  "description": "Skeleton for a front application",
+  "main": "index.js",
+  "authors": [
+    "Victor Lara <victorlara@outlook.com> (http://victorlara.io)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/vlaraort/marionette-skeleton",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-drawer-panel": "PolymerElements/paper-drawer-panel#^1.0.11",
+    "paper-header-panel": "PolymerElements/paper-header-panel#^1.1.7",
+    "paper-styles": "PolymerElements/paper-styles#^1.1.5"
+  }
+}
