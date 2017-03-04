@@ -5,7 +5,6 @@ var estimoteLib = require('tools/estimote.js');
 var css = require('./css/main.css');
 
 var BackboneAsync = require("backbone.async");
-var myConst = require('const.js');
 
 estimoteLib.startMonitoringBeacons();
 
@@ -15,7 +14,11 @@ const initialize = function() {
 
 const app = new Marionette.Application();
 app.ModelsPrototype = BackboneAsync.Model;
-app.CONSTANTES = myConst;
+
+app.CONSTANTES =  {
+  URL : 'https://backend-fs-anotherconsulting.mybluemix.net'
+};
+
 app.on('start', () => {
 
 	Backbone.emulateHTTP = true;
