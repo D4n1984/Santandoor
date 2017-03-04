@@ -8,6 +8,8 @@
     "detail":{
       "name": "Lujo en el mejor barrio",
       "street": "Gran Via 22 9-A",
+      "town": "Madrid",
+      "province": "Madrid",
       "rooms":3,
       "baths":2,
       "size":{

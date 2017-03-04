@@ -4,7 +4,7 @@
     <list default="true" id="b23bf1ce-cbc8-4a92-86f3-6ff601904c3b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_1.json" afterPath="$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorBack/bin/logic/json/user_002.json" afterPath="$PROJECT_DIR$/SantandoorBack/bin/logic/json/user_002.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_2.json" afterPath="$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_2.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +22,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="inmueble_1.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inmueble_1.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_1.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="11" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inmueble_2.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_2.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -61,7 +71,6 @@
         <option value="$PROJECT_DIR$/SantandoorBack/routes/estimotes.js" />
         <option value="$PROJECT_DIR$/SantandoorBack/bin/logic/json/estimote_46430.json" />
         <option value="$PROJECT_DIR$/SantandoorBack/bin/logic/json/estimote_24836.json" />
-        <option value="$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_2.json" />
         <option value="$PROJECT_DIR$/SantandoorBack/routes/buildings.js" />
         <option value="$PROJECT_DIR$/SantandoorBack/bin/logic/buildings.js" />
         <option value="$PROJECT_DIR$/SantandoorBack/bin/logic/users.js" />
@@ -71,6 +80,7 @@
         <option value="$PROJECT_DIR$/SantandoorBack/routes/index.js" />
         <option value="$PROJECT_DIR$/SantandoorBack/bin/logic/json/user_002.json" />
         <option value="$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_1.json" />
+        <option value="$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_2.json" />
       </list>
     </option>
   </component>
@@ -250,7 +260,7 @@
       <option name="presentableId" value="Default" />
       <updated>1488626964035</updated>
       <workItem from="1488626968047" duration="12243000" />
-      <workItem from="1488643245800" duration="9423000" />
+      <workItem from="1488643245800" duration="9906000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1488627260999</created>
@@ -277,7 +287,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21666000" />
+    <option name="totallyTimeSpent" value="22149000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,14 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SantandoorBack/bin/logic/json/estimote_24836.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -586,7 +588,15 @@
     <entry file="file://$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_1.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="27" />
           <folding />
         </state>
       </provider>

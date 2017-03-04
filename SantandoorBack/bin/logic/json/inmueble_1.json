@@ -8,6 +8,8 @@
     "detail":{
       "name": "Piso acogedor en zona centrica",
       "street": "Calle Sta. Rita 4 5-B",
+      "town": "Madrid",
+      "province": "Madrid",
       "rooms":1,
       "baths":1,
       "size":{
