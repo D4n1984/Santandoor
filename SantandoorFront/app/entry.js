@@ -6,18 +6,34 @@ var css = require('./css/main.css');
 
 var BackboneAsync = require("backbone.async");
 
-estimoteLib.startMonitoringBeacons();
 
 const initialize = function() {
-    return Promise.resolve();
+  var def = new Promise(function(resolve, reject){
+    document.addEventListener('deviceReady', function(){
+        resolve();
+    },false);
+  });
+  return def;
 };
 
 const app = new Marionette.Application();
 app.ModelsPrototype = BackboneAsync.Model;
 
 app.CONSTANTES =  {
-    URL : 'https://backend-fs-anotherconsulting.mybluemix.net'
+    URL: 'http://172.26.1.64:6002'
+    //URL : 'https://backend-fs-anotherconsulting.mybluemix.net'
 };
+
+app.foreground = true;
+
+document.addEventListener("pause", function(){
+  app.foreground = false;
+}, false);
+
+document.addEventListener("resume", function(){
+  app.foreground = true;
+}, false);
+
 
 app.on('start', () => {
 
@@ -37,6 +53,7 @@ app.mainLayout = new Backbone.Marionette.LayoutView({
 
 });
 
+estimoteLib.startMonitoringBeaconsEstimote();
 app.mainLayout.render();
 
 var Router = require('./router.js');
@@ -63,12 +80,27 @@ app.on('details', function(id) {
 
 
 app.vent.on('estimote:enter:region', function(regionData) {
-    cordova.plugins.notification.local.schedule({
-        id: 1,
-        title: "Production Jour fixe",
-        text: "Duration 1h"
-
+  var ModelBuild = require('models/building');
+    console.log(regionData);
+    var reqEstimote = ModelBuild.getBuildingByEstimote(regionData.uuid, regionData.major);
+    reqEstimote.then(function(estimoteData){
+      return ModelBuild.getDetailBuilding(estimoteData.model.get('property'));
+    }).then(function(building){
+      if (!app.foreground) {
+        cordova.plugins.notification.local.schedule({
+            id: building.model.get('id'),
+            title: "¡Tienes un inmueble cerca!",
+            text: building.model.get('build').detail.name + '. ' +  building.model.get('build').detail.street
+        });
+      }else{
+        alert("¡Tienes un inmueble cerca!");
+      }
     });
+
+
+});
+cordova.plugins.notification.local.on("click", function (notification) {
+  app.navigate('details/'+ notification.id,  {trigger: true});
 });
 
 app.vent.on('estimote:exit:region', function(regionData) {

@@ -1,1 +1,17 @@
-﻿<h1>DETAILS <%= status %></h1>
+<div class="span12">
+  ﻿ <h1><%= build.detail.name %></h1>
+  <h3><%= build.detail.street %></h3>
+  <div id="myCarousel" class="carousel slide">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <% _.each(images, function(img, i){ %>
+        <div class="item <%= (i===0)? 'active': '' %>"><img src="<%= img %>" alt=""></div>
+      <% }); %>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  </div>
+  <p><%=build.description%> </p>
+    <a href="#" class="btn btn-primary" id="hipoteca">Vive aqui por sólo... 400€/mes</a>
+</div>

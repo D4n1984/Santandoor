@@ -9,7 +9,6 @@
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
-    <plugin name="cordova-plugin-estimote" spec="*" />
     <plugin name="de.appplant.cordova.plugin.local-notification" spec="^0.8.1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

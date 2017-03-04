@@ -5,7 +5,11 @@ var View = Marionette.ItemView.extend({
 
 	template: require('./templates/main.html'),
 	tagName: 'section',
-	id: 'content-home'
+	id: 'content-home',
+	className: 'row-fluid',
+	onShow: function() {
+		$('.carousel').carousel();
+	}
 
 });
 

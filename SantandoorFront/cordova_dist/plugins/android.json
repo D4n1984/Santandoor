@@ -7,13 +7,10 @@
         "files": {}
     },
     "installed_plugins": {
-        "com.unarin.cordova.beacon": {
+        "de.appplant.cordova.plugin.local-notification": {
             "PACKAGE_NAME": "com.anotherconsulting.estimote"
         },
         "cordova-plugin-estimote": {
-            "PACKAGE_NAME": "com.anotherconsulting.estimote"
-        },
-        "de.appplant.cordova.plugin.local-notification": {
             "PACKAGE_NAME": "com.anotherconsulting.estimote"
         }
     },
