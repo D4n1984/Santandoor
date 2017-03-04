@@ -1,0 +1,21 @@
+{
+  "id":"inmueble_1",
+  "status":"Alquiler",
+  "build":{
+    "status":"Semi-nuevo",
+    "type":"Piso",
+    "price":500,
+    "detail":{
+      "rooms":1,
+      "baths":1,
+      "size":{
+        "util":55,
+        "build":65
+      },
+      "floor":4,
+      "energy":"C",
+      "images":[
+      ]
+    }
+  }
+}
