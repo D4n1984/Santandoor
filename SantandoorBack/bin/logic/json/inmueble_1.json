@@ -6,6 +6,8 @@
     "type":"Piso",
     "price":195000,
     "detail":{
+      "name": "Piso acogedor en zona centrica",
+      "street": "Calle Sta. Rita 4 5-B",
       "rooms":1,
       "baths":1,
       "size":{
