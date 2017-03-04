@@ -10,6 +10,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var buildings = require('./routes/buildings');
+var estimotes = require('./routes/estimotes');
 
 var app = express();
 
@@ -27,7 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/buildings', buildings);
+app.use('/building', buildings);
+app.use('/estimote', estimotes);
 
 
 
