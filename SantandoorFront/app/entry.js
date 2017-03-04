@@ -2,6 +2,10 @@ var jquery = window.$ = require('jquery');
 var Backbone = require('backbone');
 var Marionette = require('backbone.marionette');
 var estimoteLib = require('tools/estimote.js');
+var css = require('./css/main.css');
+
+var BackboneAsync = require("backbone.async");
+var myConst = require('const.js');
 
 estimoteLib.startMonitoringBeacons();
 
@@ -10,7 +14,8 @@ const initialize = function() {
 };
 
 const app = new Marionette.Application();
-
+app.ModelsPrototype = BackboneAsync.Model;
+app.CONSTANTES = myConst;
 app.on('start', () => {
 
 	Backbone.emulateHTTP = true;
@@ -48,7 +53,7 @@ app.on('start', () => {
 	app.on('list', function() {
 		app.navigate('list', {trigger: true});
 	});
-	
+
 	app.on('details', function(id) {
 		app.navigate('details/' + id, {trigger: true});
 	});
@@ -68,7 +73,7 @@ var API = {
 		Panel.show();
 		app.navigate('home', {trigger: true});
 	},
-		
+
 	home: function() {
 		$('#preload-region').fadeIn(function() {
 			var Controller = require('./modules/home/controller.js');
@@ -90,7 +95,7 @@ var API = {
 	details: function(id) {
 		$('#preload-region').fadeIn(function() {
 			var Controller = require('./modules/details/controller.js');
-			Controller.show();
+			Controller.show(id);
 			$('#main-region').removeClass('isOpen');
 			$('#preload-region').fadeOut();
 		});

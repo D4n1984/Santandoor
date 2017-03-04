@@ -1,11 +1,13 @@
 
 
-html, body {backgwround-color:#222;
+html, body {
+  background-color:#f00000;
 margin:0;
 padding:0;
 width:100%;
 height:100%;
-position:relative;background-image:url(https://cdn.tutsplus.com/active/uploads/legacy/tuts/172_silverlightTranslator/tutorial/images/bg.jpg);
+position:relative;
+background-image:url(https://cdn.tutsplus.com/active/uploads/legacy/tuts/172_silverlightTranslator/tutorial/images/bg.jpg);
 }
 
 
@@ -104,23 +106,23 @@ color:#aaa;}
 
 
 @media screen and (max-width:1750px){
-	#content-articles .list li{width:20%;}	
+	#content-articles .list li{width:20%;}
 }
 
 @media screen and (max-width:1400px){
-	#content-articles .list li{width:25%;}	
+	#content-articles .list li{width:25%;}
 }
 
 @media screen and (max-width:1050px){
-	#content-articles .list li{width:33.333%;}	
+	#content-articles .list li{width:33.333%;}
 }
 
 @media screen and (max-width:700px){
-	#content-articles .list li{width:50%;}	
+	#content-articles .list li{width:50%;}
 }
 
 @media screen and (max-width:350px){
-	#content-articles .list li{width:100%;}	
+	#content-articles .list li{width:100%;}
 }
 
 
@@ -145,9 +147,9 @@ color:#aaa;}
 }
 
 
-#flex-container > :nth-child(3n - 2) { oñrder: 1; }
-#flex-container > :nth-child(3n - 1) { oñrder: 2; }
-#rflex-container > :nth-child(3n - 0) { oñrder: 3; }
+#flex-container > :nth-child(3n - 2) { oï¿½rder: 1; }
+#flex-container > :nth-child(3n - 1) { oï¿½rder: 2; }
+#rflex-container > :nth-child(3n - 0) { oï¿½rder: 3; }
 #flex-container > :nth-child(-n + 3) {
   break-before: always; /* Doesn't work yet :( */
 
@@ -167,7 +169,8 @@ color:#aaa;}
 #zcontent-articles  .list{}
 #zcontent-articles  .list article{padding:30px;
 
-    background-image: url('../assets/images/articles-child-background.png');
+
+
     background-position: bottom center;
     background-repeat: repeat-x;}
 
@@ -191,7 +194,7 @@ font-weight:normal;}
     box-shadow: 3px 3px 2px #E0E0E0;
 	overflow:auto;
 	}
-	
+
 	#zcontent-articles  .list article  .image .border span{display: block;
 	border:4px solid #FFF;}
 
@@ -221,7 +224,7 @@ box-shadow:0px 0px 10px 1px #000; border-radius:50%; }
 .logo{width:100%;height:100%;
 padding:9px;box-sizing: border-box;}
 .logo2{width:100%;height:100%;
-background-color:#cc0000;border-radius:50%;background-image:url( http://www.verbicidemagazine.com/wp-content/uploads/2014/04/ramones-logo.jpg );background-size:cover;}
+background-color:#cc0000;border-radius:50%;background-size:cover;}
 
 
 
@@ -324,7 +327,7 @@ borrder:10px solid #111;
 box-shadow:0px 0px 10px #000;
 border-radius:10px;
 overflow:hidden;
-background-image:url(../assets/fondo.png);
+
 
 }
 
@@ -346,20 +349,6 @@ dbackground-size: cover;
 }
 
 
-
-li.rock{background-image:url(../assets/rock.png);}
-li.suelo{background-image:url(../assets/suelo.png);}
-
-li.escalera{background-image:url(../assets/escalera.png);}
-li.escalerasuelo{background-image:url(../assets/escalerasuelo.png);}
-li.escalerafinal{background-image:url(../assets/escalerafinal.png);}
-
-li.diamond{background-image:url(../assets/diamond.gif);}
-li.lava{background-image:url(../assets/lava.gif);}
-li.sand{background-image:url(../assets/sand.png);}
-
-
-.tio{background-image:url(../assets/tio.png);}
 
 .debug{padding-bottom:10px;}
 
@@ -391,7 +380,7 @@ margin:0px auto;
 font-family:Arial;  font-size: 11pt;
   line-height: 15pt;background-color:#fff;width:85vw;max-width:500px;box-shadow:
 0px 5px 10px 1px #000;borrder-radius:5px;  text-shadow: 1px 1px 1px #FFF;
-backgrounfd-image:url(http://i.stack.imgur.com/YBfwz.png);
+
 border:1px solid #fff;
 
 opacity:.8!important;
@@ -404,7 +393,7 @@ display:table!important;
 
 #popup-box.hidden{display:none;}
  #popup-box.advertise{width:auto!important;max-width:auto!important;}
- 
+
 #popup-message{padding:20px;
 
 }
@@ -470,7 +459,7 @@ width:100%;height:100%;overflow:hidden;
 
 #content-header{padding:15px;}
 #main-region{}
-#header-region{background-color:rgba(0,0,0,.3);padding:10px;}
+#header-region{background-color:#f00000;padding:10px;}
 #header-region > div {padding:10px;}
 #content-region{height:100%;position:relative;background-color:#fff;}
 #popup-region{display:none;}
@@ -504,8 +493,8 @@ height:100%;
 
 
 #main-region #main-region-locker{display:none;opacity:1;background-color:#000;position:absolute;height:100%;width:100%;z-index:1;
-bdackground-image:url('assets/images/content-region-locker.png');}
 
+}
 #main-region.isOpen #main-region-locker{display:block;opacity:.25;}
 
 .button { cursor: pointer; }
@@ -551,11 +540,8 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.35);}
 #content-panel ul li a div{display:table;}
 #content-panel ul li a div span{display:table-cell;vertical-align:middle;}
 
-#content-panel ul li a div span.icon{width:40px;height:40px;background-image:url(assets/images/settings.png);
+#content-panel ul li a div span.icon{width:40px;height:40px;
 background-size:cover;}
 #content-panel ul li a div span.text{width:auto;height:40px;padding-left:20px;}
-#content-panel ul li a div span.arrow{width:40px;height:40px;background-image:url(assets/images/menuArrow.png);
+#content-panel ul li a div span.arrow{width:40px;height:40px;
 background-size:cover;    opacity: .5;}
-
-
-
