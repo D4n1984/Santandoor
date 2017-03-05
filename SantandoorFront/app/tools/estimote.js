@@ -22,9 +22,13 @@ module.exports =  {
     ],
     startMonitoringBeaconsEstimote: function() {
       var _self = this;
-        estimote.beacons.startRangingBeaconsInRegion(
-    			{ uuid: this.uuidFilter }, // Empty region matches all beacons.
-    			function(resultBeacons) {
+
+      estimote.beacons.requestAlwaysAuthorization();
+
+      estimote.beacons.startRangingBeaconsInRegion(
+  			{ uuid: this.uuidFilter }, // Empty region matches all beacons.
+  			function(resultBeacons) {
+          if (resultBeacons.beacons.length){
             _.each(_self.Beacons, function(beacon, i){
               var beaconEnter = _.findWhere(resultBeacons.beacons, {uuid: beacon.uuid, major: beacon.major});
               if (beaconEnter) {
@@ -36,23 +40,17 @@ module.exports =  {
                   beaconEnter.present = false;
                 }
               }else{
-                app.vent.trigger("estimote:exit:region", beacon);
-                beacon.present = false;
+                if (beacon.present){
+                  app.vent.trigger("estimote:exit:region", beacon);
+                  beacon.present = false;
+                }
               }
             });
-
-          },
-    			function(e){
-            console.error(e);
-          });
-      };
-
-      estimote.beacons.requestAlwaysAuthorization();
-      for (var i in this.Beacons) {
-
-        var beacon = this.Beacons[i];
-        monitoringRegion(beacon);
-      }
+          }
+        },
+  			function(e){
+          console.error(e);
+        });
 
     },
     startMonitoringBeacons : function () {
