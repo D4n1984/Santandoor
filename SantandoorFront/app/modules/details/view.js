@@ -8,7 +8,9 @@ var View = Marionette.ItemView.extend({
 	id: 'content-home',
 	className: 'row-fluid',
 	onShow: function() {
+		$('.wrapper').attr('id', 'details');
 		$('.carousel').carousel();
+
 	}
 
 });

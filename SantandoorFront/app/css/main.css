@@ -1,14 +1,113 @@
-
-
 html, body {
-  background-color:#f00000;
-margin:0;
-padding:0;
-width:100%;
-height:100%;
-position:relative;
-background-image:url(https://cdn.tutsplus.com/active/uploads/legacy/tuts/172_silverlightTranslator/tutorial/images/bg.jpg);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper, #main-region, #preload-region {
+  background-color: rgb(115, 12, 12)!important
+}
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.table-cell {
+  height: 100%;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+
+.table-row {
+  display: table-row;
+  width: 100%;
+  position: relative;}
+
+#panel-region {
+  background-color: #282828!important;
+}
+
+#main-region {}
+
+#main-region-locker {}
+
+#header-region {
+  background-color: rgb(254, 0, 0)!important;
+  padding: 10px;
+}
+
+#login #header-region {
+  display: none;
+}
+
+#content-header {
+    padding: 15px;
+    background-image: url(http://4.bp.blogspot.com/-uDI3CXZ5tr0/TwC_xjnMTeI/AAAAAAAAAaM/WOQ_1xC7shk/s1600/Santander.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button {
+        display: block;
+    cursor: pointer;
+    /* border: 1px solid #fff; */
+    height: 30px;
+    width: 30px;
+    text-indent: -9999px;
+    background-image: url(https://cdn0.iconfinder.com/data/icons/mobile-set/154/menu-512.png);
+    background-size: cover;
+}
+
+#content-region {
+
+}
+
+#home #content-region {
+    background-image: url(http://thebigminds.com/wp-content/uploads/2015/12/happy-people-job-opportunities.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+#login #content-region {
+    background-color: rgb(254, 0, 0)!important;
+}
+
+#preload-region {
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
+  margin: 0px!important;
+}
+
+#preload-region > div {
+  height: 100%;
+}
+
+#preload-region .circle {
+}
+
+#preload-region .circle .loader {
+}
+
+#preload-region .circle .logo {
+}
+
+#preload-region .circle .loader > div {
+}
+
 
 
 .app {
@@ -22,22 +121,6 @@ height:100%;
 
 h3, p {margin:0px;padding:0px;}
 
-.table{display:table;
-width:100%;
-height:100%;}
-.table-cell{
-height:100%;
-width:100%;
-display:table-cell;
-vertical-align:middle;
-position:relative;
-}
-
-
-
-
-
-.table-row{display:table-row;width:100%;position:relative;}
 
 
 
@@ -46,165 +129,6 @@ position:relative;
 #content-articles{
     font-family: sans-serif;
 }
-
-#content-articles .list{
-	padding: 25px;
-}
-
-#content-articles .list article{
-background-color: rgba(0, 0, 0, 0.5);
-    /* border-radius: 5px; */
-    overflow: hidden;
-    display: block;
-    margin: 5px;
-    box-shadow: 2px 2px 2px #000000;
-    color: #fff;
-
-}
-
-#content-articles .list article .image img{
-	width: 100%;
-	display: block;
-}
-
-#content-articles .list article .content{
-	padding:10px;
-}
-
-
-
-#content-articles .list article .content span{
-	display:block;
-	margin-bottom:5px;
-	font-size:10pt;
-	display:block;
-	    color: #BBAB54;
-}
-
-#content-articles  .list article  .content h3{font-size: 11pt;
-font-weight:normal;
-display:block;
-	margin-bottom:5px;}
-
-#content-articles  .list article  .content p{font-size: 10pt;
-font-weight:normal;
-color:#aaa;}
-
-
-
-#content-articles .list ul{
-  width:100%;
-  overflow:hidden;
-}
-
-#content-articles .list li{
-
-  float:left;
-  width:20%;
-  position: relative;
-}
-
-
-@media screen and (max-width:1750px){
-	#content-articles .list li{width:20%;}
-}
-
-@media screen and (max-width:1400px){
-	#content-articles .list li{width:25%;}
-}
-
-@media screen and (max-width:1050px){
-	#content-articles .list li{width:33.333%;}
-}
-
-@media screen and (max-width:700px){
-	#content-articles .list li{width:50%;}
-}
-
-@media screen and (max-width:350px){
-	#content-articles .list li{width:100%;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#flex-container { display:flex;
-  fflex-direction:column;
-  flex-wrap:wrap;
-  fflex-flow: column wrap;
-}
-
-
-#flex-container > :nth-child(3n - 2) { o�rder: 1; }
-#flex-container > :nth-child(3n - 1) { o�rder: 2; }
-#rflex-container > :nth-child(3n - 0) { o�rder: 3; }
-#flex-container > :nth-child(-n + 3) {
-  break-before: always; /* Doesn't work yet :( */
-
-}
-
-
-
-
-
-
-
-
-
-
-
-#zcontent-articles {font-family: Arial;background-color:#f6f6f6;}
-#zcontent-articles  .list{}
-#zcontent-articles  .list article{padding:30px;
-
-
-
-    background-position: bottom center;
-    background-repeat: repeat-x;}
-
-#zcontent-articles  .list article .table-cell{vertical-align:top;}
-
-
-#zcontent-articles  .list article  .image {width: auto;padding-right:30px;}
-
-
-#zcontent-articles  .list article  .content h3{margin-bottom:10px;display:block;
-font-weight:normal;}
-
-
-
-#zcontent-articles p	{    font-size: 13pt;
-    line-height: 20pt;color: #444;}
-
-#zcontent-articles  .list article  .image .border{
-	    border: 1px solid #E8E8E8;
-    border-radius: 3px;
-    box-shadow: 3px 3px 2px #E0E0E0;
-	overflow:auto;
-	}
-
-	#zcontent-articles  .list article  .image .border span{display: block;
-	border:4px solid #FFF;}
-
-
-
-#zcontent-articles  .list article  .image .border span img{
-	display:block;
-	width: 110px; height:110px;}
-
-
 
 
 
@@ -219,19 +143,15 @@ max-width:200px;
 min-width:100px;
 max-height:200px;
 min-height:100px;
-box-shadow:0px 0px 10px 1px #000; border-radius:50%; }
+box-shadow:0px 0px 10px 1px rgba(0, 0, 0, 0.50); border-radius:50%; background-size:cover;}
 
 .logo{width:100%;height:100%;
+
 padding:9px;box-sizing: border-box;}
-.logo2{width:100%;height:100%;
-background-color:#cc0000;border-radius:50%;background-size:cover;}
-
-
-
-.loaddder{width:100%;height:100%;
-position:absolute;border:6px solid #b8d824;border-radius:50%;box-sizing: border-box;opacity:.4}
-
-
+.logo > div {width:100%;height:100%;
+border-radius:50%;background-size:cover;
+background-size:cover;
+background-image:url('https://quienmanda.s3.amazonaws.com/uploads/avatar/7/logo.png');}
 
 
 
@@ -247,7 +167,7 @@ position:absolute;border:6px solid #b8d824;border-radius:50%;box-sizing: border-
   border-top: 6px solid rgba(255, 255, 255, 0.1);
   border-right: 6px solid rgba(255, 255, 255, 0.1);
   border-bottom: 6px solid rgba(255, 255, 255, 0.1);
-  border-left: 6px solid #acd718;
+  border-left: 6px solid #ffffff;;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -295,26 +215,107 @@ position:absolute;border:6px solid #b8d824;border-radius:50%;box-sizing: border-
 
 
 
+.botonsanta {
+      display: block;
+    margin-top: 20px;
+    background-color: #fe0000;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#login .botonsanta {
+  background-color: #4c0101;
+}
+
+.principal {
+      margin: 30px;
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+.uno {display:block;
+font-size: 25pt;font-weight:bold;}
+.dos{font-size:23pt;}
+
+
+
+#list {}
+#list ul {}
+#list a {text-decoration:none;
+color: #000;}
+#list a:hover {text-decoration:none;
+color: #000;}
+#list li {border-bottom:1px solid #ccc;
+padding:10px;
+margin:0px;}
+#list .image {padding-right:20px;width:auto;}
+#list .image span{height:80px;width:80px;
+border-radius:40px;
+display:block;
+
+background-size:cover;
+background-position: center;}
+
+#list .image.uno span{
+background-image:url(http://fotos5.imghs.net/m/1044/485/1044_44073692485_1_2017021418205331250.jpg);}
+#list .image.dos span{
+background-image:url(http://www.inmopc.com/INMOWEB-PHP/base/fotos/inmuebles/79675/7967512026_1.jpg);}
+#list .image.tres span{
+background-image:url(http://www.inmorealty.es/wp-content/uploads/2016/09/piso-venta-en-gjon-inmorealty-10121-11.jpg);}
+#list .image.cuatro span{
+background-image:url(http://www.coruna-virtual.com/fotos/venta_pisos/venta_piso_en_la_coruna_1G.jpg);}
+
+
+#list .title {
+  font-weight: bold;
+}
+
+.profile {padding: 20px!important;}
+
+.pic span {display: block;
+    border: 3px solid rgba(255, 255, 255, 0.26);
+    box-shadow: 0px 0px 5px #000;
+    height: 150px;
+    width: 150px;
+    border-radius: 76.5px;
+    margin: 0px auto;
+    background-image: url(https://s2.hdstatic.net/gridfs/holadoctor/625x470_4d59a191b937950e6500000d_mujer%2040,%20cortada.jpg);
+    background-size: cover;
+    background-position:center;
+}
+    .name {    text-align: center;
+    color: #fff;
+    padding-top: 10px;} 
 
 
 
 
 
+.login-box {
+  max-width: 350px;  
+  margin: 0px auto;
+}
 
+.login-logo {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-image: url(http://4.bp.blogspot.com/-uDI3CXZ5tr0/TwC_xjnMTeI/AAAAAAAAAaM/WOQ_1xC7shk/s1600/Santander.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+input {display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.51);
+    background-color: rgba(0, 0, 0, 0.23);
+    color: #fff;
+    text-align: center;margin-bottom:20px;}
 
 
 
@@ -355,68 +356,6 @@ dbackground-size: cover;
 
 
 
-#preload-region{position:absolute;
-	top:0px;
-	background-color:rgba(0, 0, 0, 1);
-	cursor:pointer;}
-
-
-
-
-#content-popup{
-dhisplay:none;
-	position:absolute;
-	top:0px;
-	background-color:rgba(0, 0, 0, 0.9);
-	cursor:pointer;
-}
-
-
-
-#popup-box{
-
-cursor:default;
-margin:0px auto;
-font-family:Arial;  font-size: 11pt;
-  line-height: 15pt;background-color:#fff;width:85vw;max-width:500px;box-shadow:
-0px 5px 10px 1px #000;borrder-radius:5px;  text-shadow: 1px 1px 1px #FFF;
-
-border:1px solid #fff;
-
-opacity:.8!important;
-
-background: #ffffff; /* Old browsers */
-background: linear-gradient(to bottom, #FFFFFF 0%,#ccc 100%);
-display:table!important;
-}
-
-
-#popup-box.hidden{display:none;}
- #popup-box.advertise{width:auto!important;max-width:auto!important;}
-
-#popup-message{padding:20px;
-
-}
-.advertise #popup-message{padding:10px;
-
-}
-
-#popup-message h3{display:block;text-align:center;margin-bottom:10px;text-shadow:1px 1px 0px #fff;font-size:13pt;}
-#popup-message span{display:block;}
-
-#popup-buttons{padding:0px 20px 10px 20px;}
-
-#popup-buttons a{display:block;padding:10px;border:1px solid #fff;border-radius:3px;text-align:center;text-decoration:none;margin-bottom:10px;
-
-box-shadow:0px 0px 5px 0px #bbb;
-background: #eee; /* Old browsers */
-background: linear-gradient(to bottom, #eee 0%,#ddd 100%);
-
-  color: #447690;
-  font-weight: bold;
-
-}
-.advertise #popup-buttons{display:none;}
 
 
 
@@ -425,41 +364,10 @@ background: linear-gradient(to bottom, #eee 0%,#ddd 100%);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.wrapper{
-width:100%;height:100%;overflow:hidden;
-}
-
-.wrapper, #main-region {
-      background-color: rgb(115, 12, 12)!important
-}
 
 #content-header{padding:15px;}
 #main-region{}
-#header-region{background-color:#f00000;padding:10px;}
+#header-region{background-color:rgba(0,0,0,.3);padding:10px;}
 #header-region > div {padding:10px;}
 #content-region{height:100%;position:relative;background-color:#fff;}
 #popup-region{display:none;}
@@ -545,3 +453,6 @@ background-size:cover;}
 #content-panel ul li a div span.text{width:auto;height:40px;padding-left:20px;}
 #content-panel ul li a div span.arrow{width:40px;height:40px;
 background-size:cover;    opacity: .5;}
+
+
+

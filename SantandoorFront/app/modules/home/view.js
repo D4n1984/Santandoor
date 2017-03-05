@@ -6,7 +6,11 @@ var View = Marionette.ItemView.extend({
 	template: require('./templates/main.html'),
 	tagName: 'section',
 	id: 'content-home',
+
+	className: 'table-cell',
+
 	onShow: function() {
+		$('.wrapper').attr('id', 'home');
 		app.vent.on("estimote:didStartMonitoringForRegion",function() {
 			$(this.el).append('didStartMonitoringForRegion <br/>');
 		});

@@ -47,9 +47,18 @@ app.on('start', () => {
 
   Backbone.history.start();
 
+
+	$('#main-region-locker').click(function(e) {
+		e.preventDefault();
+		$('#main-region').removeClass('isOpen');
+	});
+
+	var Router = require('./router.js');
+
   app.navigate = new Router({
       controller: API
   }).navigate;
+
 
   //events
 
@@ -57,9 +66,15 @@ app.on('start', () => {
       app.navigate('home', {trigger: true});
   });
 
+
+	app.on('login', function() {
+		app.navigate('login', {trigger: true});
+	});
+
   app.on('list', function() {
       app.navigate('list', {trigger: true});
   });
+
 
   app.on('details', function(id) {
       app.navigate('details/' + id, {trigger: true});
@@ -122,40 +137,49 @@ document.addEventListener('deviceReady', function(){
 
 var API = {
 
-    preload: function() {
-        var Header = require('./modules/header/controller.js');
-        Header.show();
-        var Panel = require('./modules/panel/controller.js');
-        Panel.show();
-        app.navigate('home', {trigger: true});
-    },
+	preload: function() {
+		var Header = require('./modules/header/controller.js');
+		Header.show();
+		var Panel = require('./modules/panel/controller.js');
+		Panel.show();
+		app.navigate('home', {trigger: true});
+	},
 
-    home: function() {
-        $('#preload-region').fadeIn(function() {
-            var Controller = require('./modules/home/controller.js');
-            Controller.show();
-            $('#main-region').removeClass('isOpen');
-            $('#preload-region').fadeOut();
-        });
-    },
+	login: function() {
+		$('#preload-region').fadeIn(function() {
+			var Controller = require('./modules/login/controller.js');
+			Controller.show();
+			$('#main-region').removeClass('isOpen');
+			$('#preload-region').fadeOut();
+		});
+	},
 
-    list: function() {
-        $('#preload-region').fadeIn(function() {
-            var Controller = require('./modules/list/controller.js');
-            Controller.show();
-            $('#main-region').removeClass('isOpen');
-            $('#preload-region').fadeOut();
-        });
-    },
+	home: function() {
+		$('#preload-region').fadeIn(function() {
+			var Controller = require('./modules/home/controller.js');
+			Controller.show();
+			$('#main-region').removeClass('isOpen');
+			$('#preload-region').fadeOut();
+		});
+	},
 
-    details: function(id) {
-        $('#preload-region').fadeIn(function() {
-            var Controller = require('./modules/details/controller.js');
-            Controller.show(id);
-            $('#main-region').removeClass('isOpen');
-            $('#preload-region').fadeOut();
-        });
-    }
+	list: function() {
+		$('#preload-region').fadeIn(function() {
+			var Controller = require('./modules/list/controller.js');
+			Controller.show();
+			$('#main-region').removeClass('isOpen');
+			$('#preload-region').fadeOut();
+		});
+	},
+
+	details: function(id) {
+		$('#preload-region').fadeIn(function() {
+			var Controller = require('./modules/details/controller.js');
+			Controller.show(id);
+			$('#main-region').removeClass('isOpen');
+			$('#preload-region').fadeOut();
+		});
+	}
 
 };
 

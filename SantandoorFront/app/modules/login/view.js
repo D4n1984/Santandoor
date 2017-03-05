@@ -5,9 +5,10 @@ var View = Marionette.ItemView.extend({
 
 	template: require('./templates/main.html'),
 	tagName: 'section',
-	id: 'content-list',
+	id: 'content-login',
+	className: 'table-cell',
 	onShow: function() {
-		$('.wrapper').attr('id', 'list');
+		$('.wrapper').attr('id', 'login');
 	}
 
 });
