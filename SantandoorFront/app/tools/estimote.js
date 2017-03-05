@@ -3,32 +3,44 @@ var Marionette = require('backbone.marionette');
 var _ = require('underscore');
 
 module.exports =  {
+  uuidFilter: 'B9407F30-F5F8-466E-AFF9-25556B57FE6D',
     Beacons : [
         {
             uuid        : 'B9407F30-F5F8-466E-AFF9-25556B57FE6D',
             identifier  : 'Mint Cocktail',
             minor       : 48722,
-            major       : 24836
+            major       : 24836,
+            present     : false
         },
         {
             uuid        : 'B9407F30-F5F8-466E-AFF9-25556B57FE6D',
             identifier  : 'Blueberry Pie',
             minor       : 61890,
-            major       : 46430
+            major       : 46430,
+            present     : false
         }
     ],
     startMonitoringBeaconsEstimote: function() {
+      var _self = this;
+        estimote.beacons.startRangingBeaconsInRegion(
+    			{ uuid: this.uuidFilter }, // Empty region matches all beacons.
+    			function(resultBeacons) {
+            _.each(_self.Beacons, function(beacon, i){
+              var beaconEnter = _.findWhere(resultBeacons.beacons, {uuid: beacon.uuid, major: beacon.major});
+              if (beaconEnter) {
+                if (!beaconEnter.present){
+                  beaconEnter.present = true;
+                  app.vent.trigger("estimote:enter:region", beacon);
+                }else{
+                  app.vent.trigger("estimote:exit:region", beacon);
+                  beaconEnter.present = false;
+                }
+              }else{
+                app.vent.trigger("estimote:exit:region", beacon);
+                beacon.present = false;
+              }
+            });
 
-      var monitoringRegion = function(beaconData) {
-        // Start monitoring.
-        estimote.beacons.startMonitoringForRegion(
-    			beaconData, // Empty region matches all beacons.
-    			function(regionState) {
-            if (regionState.state === 'inside') {
-              app.vent.trigger("estimote:enter:region", regionState);
-            }else{
-              app.vent.trigger("estimote:exit:region", regionState);
-            }
           },
     			function(e){
             console.error(e);

@@ -20,113 +20,106 @@ app.CONSTANTES =  {
 
 app.foreground = true;
 
-document.addEventListener("pause", function(){
-  app.foreground = false;
-}, false);
-
-document.addEventListener("resume", function(){
-  app.foreground = true;
-}, false);
-
 
 app.on('start', () => {
 
     Backbone.emulateHTTP = true;
 
-app.mainLayout = new Backbone.Marionette.LayoutView({
+    app.mainLayout = new Backbone.Marionette.LayoutView({
 
-    el: '.wrapper',
+          el: '.wrapper',
 
-    regions: {
-        content: "#content-region",
-        header: "#header-region",
-        panel: '#panel-region'
-    },
+          regions: {
+              content: "#content-region",
+              header: "#header-region",
+              panel: '#panel-region'
+          },
 
-    template: require('./templates/layout.html'),
+          template: require('./templates/layout.html'),
 
-});
-
-estimoteLib.startMonitoringBeaconsEstimote();
-app.mainLayout.render();
-window.onerror = function(e) {
-  alert(e);
-};
-
-var Router = require('./router.js');
-
-Backbone.history.start();
-
-app.navigate = new Router({
-    controller: API
-}).navigate;
-
-//events
-
-app.on('home', function() {
-    app.navigate('home', {trigger: true});
-});
-
-app.on('list', function() {
-    app.navigate('list', {trigger: true});
-});
-
-app.on('details', function(id) {
-    app.navigate('details/' + id, {trigger: true});
-});
-
-
-app.vent.on('estimote:enter:region', function(regionData) {
-  var ModelBuild = require('models/building');
-    console.log(regionData);
-    var reqEstimote = ModelBuild.getBuildingByEstimote(regionData.uuid, regionData.major);
-    reqEstimote.then(function(estimoteData){
-      return ModelBuild.getDetailBuilding(estimoteData.model.get('property'));
-    }).then(function(building){
-      if (!app.foreground) {
-        cordova.plugins.notification.local.schedule({
-            id: building.model.get('id'),
-            title: "¡Tienes un inmueble cerca!",
-            text: building.model.get('build').detail.name + '. ' +  building.model.get('build').detail.street
-        });
-      }else{
-        alert("¡Tienes un inmueble cerca!");
-      }
     });
 
+    estimoteLib.startMonitoringBeaconsEstimote();
+    app.mainLayout.render();
+    window.onerror = function(e) {
+      alert(e);
+    };
 
-});
-cordova.plugins.notification.local.on("click", function (notification) {
-  app.navigate('details/'+ notification.id,  {trigger: true});
-});
+  var Router = require('./router.js');
 
-app.vent.on('estimote:exit:region', function(regionData) {
-    //cordova.plugins.notification.local.clear(1,null);
-});
+  Backbone.history.start();
 
-app.vent.on('estimote:enter:beacon', function(beaconData) {
-    //console.log("BEACON", beaconData);
-    if(beaconData.beacons.length > 0) {
-        //tratamos el beacon
-        _.each(beaconData.beacons, function(beacon){
-            console.log("proximity", beacon.proximity);
-            if(beacon.proximity == 'ProximityNear') {
+  app.navigate = new Router({
+      controller: API
+  }).navigate;
 
-            }else if(beacon.proximity == 'ProximityImmediate') {
-            }
+  //events
 
-        })
-    }
-});
-
-app.navigate('preload', {trigger: true});
-
-});
-
-initialize().then(function() {
-  document.addEventListener('deviceReady', function(){
-    app.start();
+  app.on('home', function() {
+      app.navigate('home', {trigger: true});
   });
+
+  app.on('list', function() {
+      app.navigate('list', {trigger: true});
+  });
+
+  app.on('details', function(id) {
+      app.navigate('details/' + id, {trigger: true});
+  });
+
+
+  app.vent.on('estimote:enter:region', function(regionData) {
+    var ModelBuild = require('models/building');
+      console.log(regionData);
+      var reqEstimote = ModelBuild.getBuildingByEstimote(regionData.uuid, regionData.major);
+      reqEstimote.then(function(estimoteData){
+        return ModelBuild.getDetailBuilding(estimoteData.model.get('property'));
+      }).then(function(building){
+        if (!app.foreground) {
+          cordova.plugins.notification.local.schedule({
+              id: building.model.get('id'),
+              title: "¡Tienes un inmueble cerca!",
+              text: building.model.get('build').detail.name + '. ' +  building.model.get('build').detail.street
+          });
+          }else{
+            alert("¡Tienes un inmueble cerca!");
+          }
+      });
+  });
+
+  cordova.plugins.notification.local.on("click", function (notification) {
+    app.navigate('details/'+ notification.id,  {trigger: true});
+  });
+
+  app.vent.on('estimote:exit:region', function(regionData) {
+      //cordova.plugins.notification.local.clear(1,null);
+  });
+
+  app.vent.on('estimote:enter:beacon', function(beaconData) {
+      //console.log("BEACON", beaconData);
+      if(beaconData.beacons.length > 0) {
+          //tratamos el beacon
+          _.each(beaconData.beacons, function(beacon){
+              console.log("proximity", beacon.proximity);
+              if(beacon.proximity == 'ProximityNear') {
+
+              }else if(beacon.proximity == 'ProximityImmediate') {
+              }
+
+          })
+      }
+  });
+
+  app.navigate('preload', {trigger: true});
+
+});
+
+document.addEventListener('deviceReady', function(){
+
+  initialize().then(function() {
+      app.start();
+  });
+
 });
 
 var API = {
