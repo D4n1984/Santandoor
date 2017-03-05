@@ -36,6 +36,11 @@ app.on('start', () => {
 
 	app.mainLayout.render();
 
+	$('#main-region-locker').click(function(e) {
+		e.preventDefault();
+		$('#main-region').removeClass('isOpen');
+	});
+
 	var Router = require('./router.js');
 
 	Backbone.history.start();
@@ -44,7 +49,9 @@ app.on('start', () => {
 		controller: API
 	}).navigate;
 
-	//events
+	app.on('login', function() {
+		app.navigate('login', {trigger: true});
+	});
 
 	app.on('home', function() {
 		app.navigate('home', {trigger: true});
@@ -72,6 +79,15 @@ var API = {
 		var Panel = require('./modules/panel/controller.js');
 		Panel.show();
 		app.navigate('home', {trigger: true});
+	},
+
+	login: function() {
+		$('#preload-region').fadeIn(function() {
+			var Controller = require('./modules/login/controller.js');
+			Controller.show();
+			$('#main-region').removeClass('isOpen');
+			$('#preload-region').fadeOut();
+		});
 	},
 
 	home: function() {
