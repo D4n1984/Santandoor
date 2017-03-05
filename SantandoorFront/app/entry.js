@@ -39,11 +39,9 @@ app.on('start', () => {
 
     });
 
-    estimoteLib.startMonitoringBeaconsEstimote();
+    //estimoteLib.startMonitoringBeaconsEstimote();
+    estimoteLib.startMonitoringBeacons();
     app.mainLayout.render();
-    window.onerror = function(e) {
-      alert(e);
-    };
 
   var Router = require('./router.js');
 

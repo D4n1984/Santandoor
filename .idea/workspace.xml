@@ -2,8 +2,163 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b23bf1ce-cbc8-4a92-86f3-6ff601904c3b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/assets/www/plugins/cordova-plugin-estimote/plugin/src/js/EstimoteBeacons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/libs/estimote-sdk-preview.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/platform_www/plugins/cordova-plugin-estimote/plugin/src/js/EstimoteBeacons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/src/com/evothings/EstimoteBeacons.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/documentation.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/beacon-finder-screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/hooks/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/css/app.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/images/beacon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/js/lib/jquery-2.1.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/js/lib/touch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/js/screen-live-development.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/js/screen-monitor-nearables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/js/screen-monitor-regions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/js/screen-range-beacons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/js/screen-range-nearables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/js/screen-scan-beacons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/examples/beacon-finder/www/js/screen-trigger-nearables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/android/EstimoteBeacons.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/android/estimote-sdk-preview.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/EstimoteBeacons.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/EstimoteBeacons.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/EstimoteSDK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Headers" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/EstimoteSDK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconConnection.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconDefinitions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconFirmwareVO.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconManager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconManagerDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconUpdateConfig.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconUpdateInfo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconVO.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTBluetoothBeacon.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTBulkUpdater.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTCloudManager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTDateRule.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTDefinitions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTEddystone.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterUID.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterURL.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterURLDomain.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneManager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneTelemetry.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneUID.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTFirmwareInfoVO.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTMotionRule.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTNearable.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTNearableDefinitions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTNearableManager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTNearableRule.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTNotificationTransporter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTOrientationRule.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTProximityRule.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTRule.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTSecureBeaconManager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTSimulatedNearableManager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTTemperatureRule.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTTrigger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTTriggerManager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/ESTUtilityManager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/A/Headers/EstimoteSDK.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/ios/Frameworks/EstimoteSDK.framework/Versions/Current" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/js/EstimoteBeacons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/cordova-plugin-estimote/plugin/src/js/conf.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity.class" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaBridge.class" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaBridge.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaPlugin.class" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaResourceApi.class" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaResourceApi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebView.class" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Whitelist$URLPattern.class" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Whitelist$URLPattern.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/res/drawable-port-hdpi/screen.png" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/res/drawable-port-hdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/res/drawable-port-ldpi/screen.png" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/res/drawable-port-ldpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/res/drawable-port-mdpi/screen.png" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/res/drawable-port-mdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/res/drawable-port-xhdpi/screen.png" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/res/drawable-port-xhdpi/screen.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorBack/bin/logic/estimotes.js" afterPath="$PROJECT_DIR$/SantandoorBack/bin/logic/estimotes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/app/entry.js" afterPath="$PROJECT_DIR$/SantandoorFront/app/entry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/app/tools/estimote.js" afterPath="$PROJECT_DIR$/SantandoorFront/app/tools/estimote.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build.gradle" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/project.properties" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/CordovaActivity.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/CordovaActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterface.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterface.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/CoreAndroid.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/CoreAndroid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/LOG.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/LOG.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/PluginEntry.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/PluginEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/PluginManager.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/PluginManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemExposedJsApi.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemExposedJsApi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebChromeClient.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebChromeClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewEngine.java" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/android.json" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/assets/www/app.js" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/assets/www/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/assets/www/cordova.js" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/assets/www/cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/assets/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/build.gradle" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/Api.js" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/Api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/android_sdk_version" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/android_sdk_version" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/build" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/build" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/check_reqs" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/check_reqs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/clean" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/clean" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/AndroidProject.js" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/AndroidProject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/AndroidStudio.js" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/AndroidStudio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/android_sdk_version.js" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/android_sdk_version.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/builders/GradleBuilder.js" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/builders/GradleBuilder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/install-device" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/install-device" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/install-emulator" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/install-emulator" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/list-devices" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/list-devices" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/list-emulator-images" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/list-emulator-images" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/list-started-emulators" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/list-started-emulators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/prepare.js" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/prepare.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/start-emulator" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/lib/start-emulator" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/log" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/run" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/run" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/version" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/cordova/version" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/platform_www/cordova.js" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/platform_www/cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/platform_www/cordova_plugins.js" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/platform_www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/project.properties" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/android/res/xml/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/platforms.json" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/platforms/platforms.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/android.json" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/fetch.json" afterPath="$PROJECT_DIR$/SantandoorFront/cordova_dist/plugins/fetch.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="$PROJECT_DIR$/npm-debug.log" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +176,101 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="estimotes.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SantandoorBack/bin/logic/estimotes.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SantandoorFront/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entry.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SantandoorFront/app/entry.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="43" column="28" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/home/templates/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/home/controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/home/view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/details/controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/details/view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/details/templates/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="estimote.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SantandoorFront/app/tools/estimote.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="104" column="22" lean-forward="true" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SantandoorFront/app/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -43,6 +288,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>/n</find>
+      <find>prox</find>
+      <find>estim</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;br /&gt;</replace>
@@ -78,6 +325,8 @@
         <option value="$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_2.json" />
         <option value="$PROJECT_DIR$/SantandoorBack/bin/logic/json/inmueble_1.json" />
         <option value="$PROJECT_DIR$/SantandoorBack/bin/logic/estimotes.js" />
+        <option value="$PROJECT_DIR$/SantandoorFront/app/entry.js" />
+        <option value="$PROJECT_DIR$/SantandoorFront/app/tools/estimote.js" />
       </list>
     </option>
   </component>
@@ -91,12 +340,13 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/SantandoorBack/node_modules" />
+    <handled-path value="$PROJECT_DIR$/SantandoorFront/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1050" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -114,26 +364,25 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Santandoor" />
+              <option name="myItemId" value="fscodeweekend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Santandoor" />
+              <option name="myItemId" value="fscodeweekend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Santandoor" />
+              <option name="myItemId" value="fscodeweekend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Santandoor" />
+              <option name="myItemId" value="fscodeweekend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -143,38 +392,247 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Santandoor" />
+              <option name="myItemId" value="fscodeweekend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Santandoor" />
+              <option name="myItemId" value="fscodeweekend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SantandoorBack" />
+              <option name="myItemId" value="SantandoorFront" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cordova_dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Santandoor" />
+              <option name="myItemId" value="fscodeweekend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Santandoor" />
+              <option name="myItemId" value="fscodeweekend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SantandoorBack" />
+              <option name="myItemId" value="SantandoorFront" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
+              <option name="myItemId" value="cordova_dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SantandoorFront" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SantandoorFront" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SantandoorFront" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SantandoorFront" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SantandoorFront" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SantandoorFront" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="header" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SantandoorFront" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="details" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fscodeweekend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SantandoorFront" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="details" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,6 +748,7 @@
       <updated>1488626964035</updated>
       <workItem from="1488626968047" duration="12243000" />
       <workItem from="1488643245800" duration="15086000" />
+      <workItem from="1488703653502" duration="4358000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1488627260999</created>
@@ -316,7 +775,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27329000" />
+    <option name="totallyTimeSpent" value="31687000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -328,18 +787,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2575357" sideWeight="0.48739496" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25744048" sideWeight="0.47804877" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.49814913" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.51877314" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.489688" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2575357" sideWeight="0.5126051" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.49127445" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25744048" sideWeight="0.5219512" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.49127445" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.48122686" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.48122686" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -349,6 +807,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -383,24 +842,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SantandoorBack/bin/logic/buildings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SantandoorBack/routes/buildings.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -408,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -416,9 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -427,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5422">
           <caret line="236" column="76" lean-forward="false" selection-start-line="236" selection-start-column="71" selection-end-line="236" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -456,7 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -464,9 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -524,7 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -532,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -540,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-472">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -548,7 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -556,7 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-396">
           <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -564,7 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -572,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -580,7 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -588,7 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="29" column="14" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -596,7 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -604,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,23 +1042,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SantandoorBack/.idea/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorBack/.idea/.gitignore" />
     <entry file="file://$PROJECT_DIR$/SantandoorBack/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,7 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,7 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,14 +1078,93 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SantandoorBack/bin/logic/estimotes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="119">
           <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorFront/app/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorFront/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/home/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/home/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/home/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/details/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/details/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorFront/app/modules/details/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorFront/app/entry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="43" column="28" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SantandoorFront/app/tools/estimote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="104" column="22" lean-forward="true" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
           <folding />
         </state>
       </provider>
