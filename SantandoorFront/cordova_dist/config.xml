@@ -9,7 +9,7 @@
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
-    <plugin name="cordova-plugin-estimote" spec="*" />
+    <plugin name="de.appplant.cordova.plugin.local-notification" spec="^0.8.1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -19,6 +19,21 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <!-- A wildcard can be used to whitelist the entire network,
+     over HTTP and HTTPS.
+     *NOT RECOMMENDED* -->
+        <allow-navigation href="*" />
+
+        <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
+        <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
+        <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
+        <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
+
+        <preference name="FadeSplashScreen" value="false"/>
+        <preference name="FadeSplashScreenDuration" value="750"/>
+
+        <preference name="orientation" value="portrait" />
+        <preference name="SplashScreenDelay" value="3000" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />

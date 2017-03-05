@@ -7,9 +7,8 @@ var Controller = Marionette.Object.extend({
 
 		var View = require('./view');
 		var reqBuilding = Buildings.getDetailBuilding(idBuilding);
-		reqBuilding.then(function(dataBuilding){
-			console.log(dataBuilding);
-			var view = new View();
+		reqBuilding.then(function(dataBuilding){			
+			var view = new View({model:dataBuilding.model});
 			app.mainLayout.content.show(view);
 		});
 
